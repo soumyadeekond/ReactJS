@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+</head>
+<body>
+    <div id="root">
+        <script>
+            var h2 = React.createElement("h2", null, "h2 inside div and div inside the div1");
+            var p = React.createElement("p", null, "This is para");
+
+            var div = React.createElement("div", null, h2);
+            var div1 = React.createElement("div", null, p);
+
+            ReactDOM.render([div, div1], document.getElementById("root"));
+        </script>
+    </div>
+</body>
+</html>

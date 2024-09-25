@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id = "root"></div>
+        <script>
+            var h2Element=React.createElement("h2", null , "h2 is inside div element");
+            var p1=React.createElement("p", null, "paragraph is inside div element too");
+           var imgElement=React.createElement("img", {src: "https://as2.ftcdn.net/v2/jpg/03/83/25/83/1000_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg", width:"500", height:"300"});
+           var div1 = React.createElement("div", null, [h2Element, p1, imgElement]);
+            var div = React.createElement("div", null, div1);
+           ReactDOM.render(div, document.getElementById("root"));
+        </script>
+    </body>
+</html>
