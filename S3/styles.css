@@ -1,0 +1,13 @@
+#card {
+    border: 2px solid black;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+   justify-content: center;
+   box-shadow: 0 0 10px black;
+   }
+   .container{
+    display: flex;
+    padding: 10px;
+    justify-content:space-evenly;
+   }

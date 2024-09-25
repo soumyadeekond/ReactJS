@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="root">
+    <script>
+    let img1 = React.createElement("img", {src:"https://as2.ftcdn.net/v2/jpg/03/83/25/83/1000_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg", width:"300", height:"200"});
+
+   let p1 = React.createElement("p", null,  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Necessitatibus, adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, eos?");
+    let button1 = React.createElement("button", null, "press"); 
+    let div = React.createElement("div", {id:"card"}, [img1, p1, button1]);
+    let containerDiv=React.createElement("div",{className: "container"}, [div, div]);
+    ReactDOM.render(containerDiv, document.getElementById("root"));
+    </script>
+   </div>
+    </body>
+</html>
